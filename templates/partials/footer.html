@@ -1,0 +1,42 @@
+{# vim: set ft=htmldjango : #}
+
+<footer class="site-footer">
+  <section class="rss">
+		<a
+			class="subscribe-button icon-feed"
+			href="/sitemap.xml"
+			aria-label="Subscribe to the RSS feed"
+		></a>
+	</section>
+  {% if config.extra.twitter is defined %}
+	<section class="twitter">
+		<a
+			class="icon-twitter"
+			href="https://twitter.com/{{ config.extra.twitter }}"
+			aria-label="Visit {{ config.extra.twitter }}'s twitter"
+		>
+			{{ config.extra.twitter }}
+		</a>
+	</section>
+	{% endif -%}
+  {%- if config.extra.facebook is defined %}
+	<section class="facebook">
+		<a
+			class="icon-facebook"
+			href="https://www.facebook.com/{{ config.extra.facebook }}"
+			aria-label="Visit {{ config.extra.twitter }}'s facebook"
+		>
+			{{ config.extra.facebook }}
+		</a>
+	</section>
+	{% endif %}
+  <section class="copyright">&copy; {{ now() | date(format="%Y") }} {{ config.title }}</section>
+  <section class="poweredby">
+		<a href="https://github.com/Crystalix007/arabica">Arabica</a> theme by Sean
+		Lunsford. Published with <a href="https://www.getzola.org/">Zola</a>.
+	</section>
+</footer>
+<!-- custom js -->
+{% for script in config.extra.customJS %}
+  <script src="/js/{{ script }}"></script>
+{% endfor %}

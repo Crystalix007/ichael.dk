@@ -1,0 +1,6 @@
+public/
+themes
+
+# Vim files
+Session.vim
+.undodir

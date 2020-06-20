@@ -1,0 +1,10 @@
+{# vim: set ft=htmldjango : #}
+
+{%- macro preload(type, as, href, rel) -%}
+<link rel="preload" type="{{ type }}" as="{{ as }}"
+	href="{{ href | safe }}"
+/>
+<link rel="stylesheet" type="{{ type }}" as="{{ as }}"
+	href="{{ href | safe }}"
+/>
+{%- endmacro preload -%}

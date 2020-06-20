@@ -1,0 +1,14 @@
+{#- vim: set ft=htmldjango : -#}
+
+<!DOCTYPE HTML>
+<html lang="en">
+	{%- include "partials/head.html" -%}
+
+	<body {%- if body_class is defined %} class="{% block body_class %}{% endblock
+																							 body_class %}"{%- endif -%}>
+		{%- include "partials/header.html" -%}
+		{%- block content -%}
+		{%- endblock content -%}
+		{%- include "partials/footer.html" -%}
+	</body>
+</html>

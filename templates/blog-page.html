@@ -1,0 +1,38 @@
+{# vim: set ft=htmldjango : #}
+
+{%- extends "base.html" -%}
+
+{%- block content -%}
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+			{%- if page.extra.image is defined -%}
+			<img
+				{%- if page.extra.image.alt is defined %}
+				alt="{{- page.extra.image.alt -}}"
+				{%- endif %}
+				loading="lazy"
+				src="{{ page.extra.image.url }}"
+			/>
+    	{%- endif -%}
+      <h2 class="post-title">{{ page.title }}</h2>
+      <section class="post-meta">
+        <time class="post-date">{{ page.date }}</time>
+      </section>
+    </header>
+    <section class="post-content">
+      {{ page.content | safe }}
+    </section>
+    <footer class="post-footer">
+			{%- if page.taxonomies.tags is defined -%}
+      <section class="tags post-meta">
+        Tagged
+        {%- for tag in page.taxonomies.tags -%}
+					<a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>
+        {%- endfor -%}
+      </section>
+			{% endif %}
+    </footer>
+  </article>
+</main>
+{%- endblock content -%}

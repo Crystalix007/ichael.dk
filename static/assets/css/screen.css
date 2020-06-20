@@ -21,32 +21,32 @@ http://modularscale.com/
 */
 
 html {
-    height: 100%;
-    max-height: 100%;
-    font-size: 112.5%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	height: 100%;
+	max-height: 100%;
+	font-size: 112.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-    -webkit-font-feature-settings: 'kern' 1;
-    -moz-font-feature-settings: 'kern' 1;
-    -ms-font-feature-settings: 'kern' 1;
-    -o-font-feature-settings: 'kern' 1;
-    font-feature-settings: 'kern' 1;
-    height: 100%;
-    max-height: 100%;
-    width: 80%;
-    max-width: 650px;
-    margin: 0 auto;
-    font-family: "Lato", sans-serif;
+	-webkit-font-feature-settings: 'kern' 1;
+	-moz-font-feature-settings: 'kern' 1;
+	-ms-font-feature-settings: 'kern' 1;
+	-o-font-feature-settings: 'kern' 1;
+	font-feature-settings: 'kern' 1;
+	height: 100%;
+	max-height: 100%;
+	width: 80%;
+	max-width: 650px;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #3A4145;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #3A4145;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Bree Serif", serif;
+	font-family: "Bree Serif", serif;
 	font-weight: 500;
 	margin-bottom: 0;
 }
@@ -80,11 +80,11 @@ p {
 }
 
 code, tt, pre {
-    font-family: "Source Code Pro", monospace, sans-serif;
-    white-space: pre-wrap;
-    font-size: 0.79rem;
-    border: none;
-    background: none;
+	font-family: "Source Code Pro", monospace, sans-serif;
+	white-space: pre-wrap;
+	font-size: 0.79rem;
+	border: none;
+	background: none;
 }
 
 pre {
@@ -106,8 +106,8 @@ blockquote {
 }
 
 blockquote p {
-    margin: 0.8em 0;
-    font-style: italic;
+	margin: 0.8em 0;
+	font-style: italic;
 }
 
 blockquote cite {
@@ -116,30 +116,30 @@ blockquote cite {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: #9EABB3 1px solid;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: #9EABB3 1px solid;
 }
 
 /* Links */
 .post a {
-    color: #FC7E0F;
-    text-decoration: none;
+	color: #FC7E0F;
+	text-decoration: none;
 }
 
 .post a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .post a:visited {
-    color: #9EABB3;
-    text-decoration: none;
+	color: #9EABB3;
+	text-decoration: none;
 }
 
 a.read-more, a.read-more:hover, a.read-more:visited {
-    color: #FC7E0F;	/* #DA1F15, #F17F33 */
-    text-decoration: none;
+	color: #FC7E0F;	/* #DA1F15, #F17F33 */
+	text-decoration: none;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -155,20 +155,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* Tables and dictionaries (straight up ripped out of the Casper stylesheet with minor modifications) */
 
 table {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 1.7em 0;
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 1.7em 0;
+	width: 100%;
+	max-width: 100%;
+	background-color: transparent;
 }
 
 th, td {
-    padding: 8px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: top;
-    border-top: #EFEFEF 1px solid;
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: #EFEFEF 1px solid;
 }
 
 td h3, td h4, td h5, td h6 {
@@ -181,7 +181,7 @@ table colgroup + thead tr:first-child th,
 table colgroup + thead tr:first-child td,
 table thead:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
-    border-top: 0;
+	border-top: 0;
 }
 
 table tbody + tbody { border-top: #EFEFEF 2px solid; }
@@ -190,39 +190,39 @@ table table table { background-color: #FFF; }
 
 th {
 	color: #000;
-    background-color: #F6F6F6;
+	background-color: #F6F6F6;
 }
 
 dl dt {
-    float: left;
-    width: 180px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: 700;
-    margin-bottom: 1em;
+	float: left;
+	width: 180px;
+	overflow: hidden;
+	clear: left;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 700;
+	margin-bottom: 1em;
 }
 
 dl dd {
-    margin-left: 200px;
-    margin-bottom: 1em
+	margin-left: 200px;
+	margin-bottom: 1em
 }
 
 /*	==========================================================================
-	Blog header
-	========================================================================== */
+Blog header
+========================================================================== */
 
 .main-header {
-    position: relative;
-    width: 100%;
-    padding: 2rem 0;
-    margin-bottom: 1rem;
-    text-align: center;
-    vertical-align: middle;
-    overflow: hidden;
-    display: table;
+	position: relative;
+	width: 100%;
+	padding: 2rem 0;
+	margin-bottom: 1rem;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	display: table;
 }
 
 .main-header-content {
@@ -230,32 +230,32 @@ dl dd {
 }
 
 .blog-title {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
-    font-size: 2.887rem;
-    vertical-align: middle;
-    line-height: 1;
+	font-size: 2.887rem;
+	vertical-align: middle;
+	line-height: 1;
 }
 
 .blog-title a {
-	font-color: inherit;
+	color: inherit;
 }
 
 .blog-description {
-    margin: 0;
-    font-size: 0.889rem;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    color: #9EABB3;
-    font-weight: 300;
+	margin: 0;
+	font-size: 0.889rem;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: #9EABB3;
+	font-weight: 300;
 }
 
 /*	==========================================================================
-	Navigation
-	========================================================================== */
+Navigation
+========================================================================== */
 
 .nav {
 	margin-top: 1rem;
@@ -285,18 +285,18 @@ a.nav-home, a.nav-blog {
 }
 
 /*	==========================================================================
-	Site footer
-	========================================================================== */
+Site footer
+========================================================================== */
 
 .site-footer {
-    position: relative;
-    display: table;
-    width: 100%;
-    margin-top: 3rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    overflow: hidden;
-    font-size: .79rem;
+	position: relative;
+	display: table;
+	width: 100%;
+	margin-top: 3rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	overflow: hidden;
+	font-size: .79rem;
 }
 
 .site-footer a {
@@ -333,18 +333,18 @@ a.nav-home, a.nav-blog {
 	color: #ffffff;
 	background: #FC7E0F;
 }
-*/
+ */
 
 /*	==========================================================================
-	Posts
-	========================================================================== */
+Posts
+========================================================================== */
 
 .post {
-    position: relative;
-    margin: 2rem auto;
-    padding-bottom: 4rem;
-    word-break: break-word;
-    hyphens: auto;
+	position: relative;
+	margin: 2rem auto;
+	padding-bottom: 4rem;
+	word-break: break-word;
+	hyphens: auto;
 }
 
 .post-header {
@@ -379,19 +379,19 @@ a.nav-home, a.nav-blog {
 }
 
 .post-footer .share {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .post-footer .share a {
-    font-size: 1.8rem;
-    display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
-    text-decoration: none;
+	font-size: 1.8rem;
+	display: inline-block;
+	margin: 1rem 1.6rem 1.6rem 0;
+	color: #BBC7CC;
+	text-decoration: none;
 }
 
 .post-footer .share a:hover {
-    color: #50585D;
+	color: #50585D;
 }
 
 .post img {
@@ -471,12 +471,12 @@ a.nav-home, a.nav-blog {
 }
 
 /*	==========================================================================
-	Tags
-	========================================================================== */
+Tags
+========================================================================== */
 
 .tag-title {
-    font-family: "Lato", sans-serif;
-    font-size: 1.802rem;
+	font-family: "Lato", sans-serif;
+	font-size: 1.802rem;
 	font-weight: bold;
 	margin-top: 0;
 }
@@ -490,65 +490,65 @@ a.nav-home, a.nav-blog {
 }
 
 /* ==========================================================================
-   Pagination
-   ========================================================================== */
+Pagination
+========================================================================== */
 
 /* The main wrapper for pagination links */
 .pagination {
-    position: relative;
-    margin: 2rem auto;
-    font-size: .79rem;
-    color: #9EABB3;
-    text-align: center;
+	position: relative;
+	margin: 2rem auto;
+	font-size: .79rem;
+	color: #9EABB3;
+	text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+	color: #9EABB3;
 }
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
-    position: absolute;
-    display: inline-block;
-    text-decoration: none;
+	position: absolute;
+	display: inline-block;
+	text-decoration: none;
 }
 
 .older-posts {
-    right: 0;
+	right: 0;
 }
 
 .page-number {
-    display: inline-block;
-    padding: 2px 0;
-    min-width: 100px;
+	display: inline-block;
+	padding: 2px 0;
+	min-width: 100px;
 }
 
 .newer-posts {
-    left: 0;
+	left: 0;
 }
 
 .older-posts:hover,
 .newer-posts:hover {
-    color: #FC7E0F;
+	color: #FC7E0F;
 }
 
 .extra-pagination {
-    display: none;
+	display: none;
 }
 
 .extra-pagination .pagination {
-    width: auto;
+	width: auto;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
 .paged .extra-pagination {
-    display: block;
+	display: block;
 }
 
 /* ==========================================================================
-   12. Media Queries - Smaller than 500px
-   ========================================================================== */
+12. Media Queries - Smaller than 500px
+========================================================================== */
 
 @media only screen and (max-width: 500px) {
 
@@ -556,11 +556,11 @@ a.nav-home, a.nav-blog {
 		font-size: 100%;
 	}
 
-   .blog-title {
+	.blog-title {
 		font-size: 2.281rem;
 	}
-	
+
 	.blog-description {
-	   font-size: 0.889rem;
+		font-size: 0.889rem;
 	}
 }

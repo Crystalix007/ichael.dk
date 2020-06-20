@@ -1,0 +1,23 @@
+{# vim: set ft=htmldjango : #}
+
+{%- extends "base.html" -%}
+{%- import "partials/pagination.html" as pag -%}
+
+{%- block content -%}
+<main class="content" role="main">
+	<div class="extra-pagination">
+		{% block paginationControlsTop %}
+		{%- if paginator -%}
+			{{ pag::paginate(paginator=paginator) }}
+		{%- endif -%}
+		{% endblock paginationControlsTop %}
+	</div>
+	{% block pagination %}
+	{% endblock pagination %}
+	{% block paginationControlsBottom %}
+	{%- if paginator -%}
+		{{ pag::paginate(paginator=paginator) }}
+	{%- endif -%}
+	{% endblock paginationControlsBottom %}
+</main>
+{%- endblock content -%}

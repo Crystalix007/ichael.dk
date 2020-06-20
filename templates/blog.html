@@ -1,0 +1,15 @@
+{# vim: set ft=htmldjango : #}
+
+{% extends "index.html" %}
+{%- import "post/macros.html" as postMacros -%}
+{%- import "partials/pagination.html" as pag -%}
+
+{%- block paginationControlsBottom -%}
+	{{ pag::paginate(paginator=paginator) }}
+{%- endblock paginationControlsBottom -%}
+
+{%- block pagination -%}
+	{%- for post in paginator.pages -%}
+		{{ postMacros::summary(context=post) }}
+	{%- endfor %}
+{%- endblock pagination -%}

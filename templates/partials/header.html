@@ -1,0 +1,26 @@
+{# vim: set ft=htmldjango : #}
+
+<header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="{{ get_url(path="@/_index.md") | safe }}">
+				{%- if config.extra.logoTitle is defined -%}
+					{{- config.extra.logoTitle | safe -}}
+				{%- else -%}
+           {{- config.title -}}
+				{%- endif -%}
+			</a>
+		</h1>
+		<h2 class="blog-description">{{ config.description }}</h2>
+	</div>
+
+	<div class="nav">
+		{%- for menu in config.extra.menus -%}
+			{%- set menu_path = "menus/" ~ menu -%}
+			{%- set menu_page = get_page(path=menu_path) -%}
+      <a class="nav- {% if current_path == menu_page.path -%}nav-current{%- endif -%}"
+				role="presentation" href="{{ menu_page.permalink | safe }}">{{
+				menu_page.title }}</a>
+		{%- endfor -%}
+	</div>
+</header>

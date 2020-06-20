@@ -1,0 +1,17 @@
+{# vim: set ft=htmldjango : #}
+
+{%- macro paginate(paginator) -%}
+	{%- if paginator is defined -%}
+	<nav class="pagination" role="navigation">
+		{%- if paginator.previous -%}
+			<a class="newer-posts" href="{{ paginator.previous }}">&larr; Newer Posts</a>
+		{%- endif -%}
+		<span class="page-number">Page {{ paginator.current_index }} of {{
+			paginator.number_pagers }}</span>
+		{%- if paginator.next -%}
+			<a class="older-posts" href="{{ paginator.next }}">Older Posts &rarr;</a>
+		{%- endif -%}
+	</nav>
+	{%- else -%}
+	{%- endif -%}
+{%- endmacro paginate -%}
