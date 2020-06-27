@@ -1,6 +1,6 @@
 +++
 title = "Zola help sections"
-template = "post/listing.html"
+template = "index.html"
 page_template = "main-page.html"
 +++
 

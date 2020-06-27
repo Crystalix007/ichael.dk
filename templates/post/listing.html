@@ -2,21 +2,14 @@
 
 {%- extends "index.html" -%}
 {%- import "post/macros.html" as postMacros -%}
+{%- import "partials/pagination.html" as pag -%}
 
 {%- block paginationControlsBottom -%}
-	{%- set postsSection = get_section(path="post/_index.md") -%}
-	{%- set postsCount = postsSection.pages | length -%}
-	{%- if postsCount > 3 -%}
-		<nav class="pagination" role="navigation">
-			<span class="page-number">Page 1 of {{ postsCount / 3 | round(method="ceil") }}</span>
-			<a class="older-posts" href="{{ get_url(path="@/post/_index.md") }}/page/2">Older Posts →</a>
-		</nav>
-	{%- endif -%}
+{{ pag::paginate(paginator=paginator) }}
 {%- endblock paginationControlsBottom -%}
 
 {%- block pagination -%}
-	{%- set postsSection = get_section(path="post/_index.md") %}
-	{%- for post in postsSection.pages | slice(end=3) -%}
+	{%- for post in paginator.pages -%}
 		{{ postMacros::summary(context=post) }}
 	{%- endfor %}
 {%- endblock pagination -%}
