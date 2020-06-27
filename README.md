@@ -1,58 +1,60 @@
-This is a port of the [Arabica theme for Ghost](https://github.com/slunsford/arabica) to Hugo. You can find a live demo [here](https://arabica.netlify.com).
+This is a port of the [Arabica theme for Hugo](https://github.com/nirocfz/arabica) to Zola. You can find a live demo [here](https://zola-arabica.netlify.app/).
 
-![Preview](https://raw.githubusercontent.com/nirocfz/arabica/master/images/screenshot.png)
+![Preview](https://raw.githubusercontent.com/Crystalix007/arabica/master/images/screenshot.png)
 
 ## Quickstart
 
-### Install
+### Preview example site
 
-Inside the folder of your Hugo site run:
-
-```
-$ cd themes
-$ git clone https://github.com/nirocfz/arabica
+```sh
+$ cd arabica
+$ zola serve
 ```
 
-### Preview exampleSite
+### Configure Zola
 
+This is the `config.toml` of the example site.
+
+```toml
+# The URL the site will be built for
+base_url = "https://zola-arabica.netlify.com"
+generate_rss = true
+compile_sass = true
+
+title = "Zola Arabica"
+description = "A minimal Zola theme"
+highlight_code = true
+
+taxonomies = [
+	{ name = "categories", paginate_by = 3, rss = true },
+	{ name = "tags", paginate_by = 3 }
+]
+
+[extra]
+author = "Michael Kuc"
+menus = [ "about.md", "getting_started.md" ]
+customJS = []
+logoTitle = "Arabica"
+
+postSummaryDateFormat = "%Y-%m"
+
+#twitter = "Your Twitter username"
+#facebook = "Your Facebook username"
 ```
-$ cd arabica/exampleSite
-$ hugo server --themesDir ../..
-```
 
-### Configure Hugo
-
-Add the folling line to `config.toml` to use the theme
-
-```
-theme = "arabica"
-```
-
-This is the `config.toml` of [exampleSite](/exampleSite)
-
-```
-baseurl = "https://example.org/"
-title = "Arabica"
-author = "John Doe"
-paginate = 3
-theme = "arabica"
-
-[params]
-    description = "A minimal Hugo theme"
-    dateFormatToUse = "2006-01-02"
-    replaceGoogleFonts = "fonts.loli.net"
-    twitter = "example"
-    facebook = "example"
-```
-
-You can add `image` front matter to a post, see [example post](https://github.com/nirocfz/arabica/blob/master/exampleSite/content/post/creating-a-new-theme.md).
+To customise the site, please see the [getting-started page](https://github.com/Crystalix007/arabica/blob/master/content/menus/getting_started.md).
 
 Thanks
 
-* [Hugo](https://gohugo.io/)
-* [slunsford/arabica](https://github.com/slunsford/arabica)
-* [xianmin/hugo-theme-jane](https://github.com/xianmin/hugo-theme-jane)
+* [Zola](https://www.getzola.org/)
+* [nirocfz/arabica](https://github.com/nirocfz/arabica)
+
+### Accessibility
+
+Ported as is, Google's Lighthouse tools reports low contrast ratios for some
+text elements. For increased accessibility, see the changes made on the
+accessibility branch.
 
 ## License
 
-See [LICENSE](https://github.com/nirocfz/arabica/blob/master/LICENSE)
+See [LICENSE](https://github.com/Crystalix007/arabica/blob/master/LICENSE)
