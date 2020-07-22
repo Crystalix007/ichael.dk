@@ -1,7 +1,7 @@
 +++
 date = 2020-06-23T18:30:36+01:00
 slug = "zola-pagination"
-title = "How pagination works in Zola"
+title = "How Pagination Works in Zola"
 author = "Michael Kuc"
 
 [taxonomies]
