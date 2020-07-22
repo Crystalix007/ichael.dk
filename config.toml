@@ -19,6 +19,7 @@ customJS = []
 logoTitle = "Arabica"
 
 postSummaryDateFormat = "%Y-%m"
+postPageDateFormat = "%Y-%m-%d %H:%M"
 
 #twitter = "Your Twitter username"
 #facebook = "Your Facebook username"

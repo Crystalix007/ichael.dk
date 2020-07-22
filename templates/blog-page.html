@@ -17,7 +17,7 @@
     	{%- endif -%}
       <h2 class="post-title">{{ page.title }}</h2>
       <section class="post-meta">
-        <time class="post-date">{{ page.date }}</time>
+        <time class="post-date">{{ page.date | date(format=config.extra.postPageDateFormat) }}</time>
       </section>
     </header>
     <section class="post-content">
@@ -27,7 +27,7 @@
 			{%- if page.taxonomies.tags is defined -%}
       <section class="tags post-meta">
         Tagged
-        {%- for tag in page.taxonomies.tags -%}
+        {%- for tag in page.taxonomies.tags %}
 					<a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>
         {%- endfor -%}
       </section>

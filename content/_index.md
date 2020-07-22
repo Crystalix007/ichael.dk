@@ -1,7 +1,8 @@
 +++
-title = "Arabica demo site"
-template = "post/listing.html"
+isHome = true
 page_template = "main-page.html"
 paginate_by = 3
-isHome = true
+sort_by = "date"
+template = "post/listing.html"
+title = "Arabica demo site"
 +++
