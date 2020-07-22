@@ -3,7 +3,7 @@
 {%- macro summary(context) -%}
 <article class="post">
 	<header class="post-header">
-    {%- if context.extra.image.url is defined -%}
+		{%- if context.extra.image.url is defined -%}
 			<img
 				{%- if context.extra.image.alt is defined %}
 				alt="{{- context.extra.image.alt -}}"
@@ -11,11 +11,11 @@
 				loading="lazy"
 				src="{{ context.extra.image.url }}"
 			/>
-    {%- endif -%}
+		{%- endif -%}
 		<h2 class="post-title"><a href="{{ context.permalink }}">{{ context.title }}</a></h2>
 	</header>
 	<section class="post-excerpt">
-    <p>
+		<p>
 			{%- if context.description -%}
 				{{ context.description | safe }} &hellip;
 			{%- elif context.summary -%}
@@ -24,10 +24,10 @@
 				No description provided.
 			{%- endif -%}
 			<a class="read-more" href="{{ context.permalink | safe }}">&raquo;</a>
-    </p>
+		</p>
 	</section>
 	<footer class="post-meta">
-    <time class="post-date">{{ context.date | date(format=config.extra.postSummaryDateFormat) }}</time>
+		<time class="post-date">{{ context.date | date(format=config.extra.postSummaryDateFormat) }}</time>
 	</footer>
 </article>
 {%- endmacro summary -%}
