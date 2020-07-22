@@ -17,9 +17,9 @@
 	<section class="post-excerpt">
 		<p>
 			{%- if context.description -%}
-				{{ context.description | safe }} &hellip;
+				{{ context.description | safe }}.
 			{%- elif context.summary -%}
-				{{- context.summary | striptags | trim_end | safe -}}
+				{{- context.summary | striptags | trim_end | safe -}} &hellip;
 			{%- else -%}
 				No description provided.
 			{%- endif -%}
