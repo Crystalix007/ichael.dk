@@ -1,10 +1,10 @@
 # The URL the site will be built for
-base_url = "https://zola-arabica.netlify.com"
+base_url = "https://m.ichael.dk"
 generate_rss = true
 compile_sass = false
 
-title = "Zola Arabica"
-description = "A minimal Zola theme"
+title = "MD Kuc"
+description = "Software Engineer"
 highlight_code = true
 
 # For other themes see:
@@ -18,9 +18,9 @@ taxonomies = [
 
 [extra]
 author = "Michael Kuc"
-menus = [ "about.md", "getting_started.md" ]
+menus = [ "about.md", "skills.md" ]
 customJS = []
-logoTitle = "Arabica"
+logoTitle = "Michael Daniel Kuc"
 
 postSummaryDateFormat = "%Y-%m"
 postPageDateFormat = "%Y-%m-%d %H:%M"
