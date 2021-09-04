@@ -1,0 +1,15 @@
+.zola-anchor {
+	position: absolute;
+	left: -1.2em;
+	opacity: 0;
+	transition: opacity 0.5s 2s;
+}
+
+*:hover > .zola-anchor, .zola-anchor:hover {
+	opacity: 1;
+	transition: opacity 0.5s 0s;
+}
+
+.post .zola-anchor:hover {
+	text-decoration: none;
+}

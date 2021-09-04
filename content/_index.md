@@ -4,5 +4,5 @@ page_template = "main-page.html"
 paginate_by = 3
 sort_by = "date"
 template = "post/listing.html"
-title = "Arabica demo site"
+title = "Michael's Blog"
 +++
