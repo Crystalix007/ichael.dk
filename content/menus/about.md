@@ -17,7 +17,7 @@ lower-cost U2F tokens to the masses.
 This website is based upon my [Zola][zola] port of [Arabica theme][original] for
 [Hugo][hugo].
 
-[github]: https://gtihub.com/Crystalix007
+[github]: https://github.com/Crystalix007
 [PiU2F]: https://github.com/Crystalix007/U2FDevice
 [zola]: https://getzola.org
 [original]: https://github.com/nirocfz/arabica
