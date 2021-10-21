@@ -25,5 +25,12 @@ logoTitle = "Michael Daniel Kuc"
 postSummaryDateFormat = "%Y-%m"
 postPageDateFormat = "%Y-%m-%d %H:%M"
 
+themes = [
+	{ name = "Plain", id = "plain" },
+	{ name = "Solarised", id = "solarised" },
+	{ name = "Earthly", id = "earthly" },
+	{ name = "Nocturnal", id = "nocturnal" }
+]
+
 #twitter = "Your Twitter username"
 #facebook = "Your Facebook username"

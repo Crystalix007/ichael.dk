@@ -3,11 +3,6 @@ body {
     background-color: var(--theme-base-background);
 }
 
-#theme-selector > #theme-dropdown {
-    color: var(--theme-base-text-colour);
-    background-color: var(--theme-base-background);
-}
-
 #theme-selector > #theme-dropdown:hover {
     color: var(--theme-base-background);
     background-color: var(--theme-base-text-colour);
@@ -113,4 +108,8 @@ a.nav-current {
 
 blockquote {
     color: var(--theme-blockquote-colour);
+}
+
+pre {
+    color: var(--theme-code-colour);
 }

@@ -6,8 +6,9 @@
 	<div id="theme-dropdown">
 		<div id="theme-current">Plain</div>
 		<div id="theme-dropdown-options">
-			<div data-value="plain">Plain</div>
-			<div data-value="solarised">Solarised</div>
+			{%- for theme in config.extra.themes -%}
+			<div data-value="{{ theme.id }}">{{ theme.name }}</div>
+			{%- endfor -%}
 		</div>
 	</div>
 </div>
