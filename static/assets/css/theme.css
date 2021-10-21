@@ -1,0 +1,116 @@
+body {
+    color: var(--theme-base-text-colour);
+    background-color: var(--theme-base-background);
+}
+
+#theme-selector > #theme-dropdown {
+    color: var(--theme-base-text-colour);
+    background-color: var(--theme-base-background);
+}
+
+#theme-selector > #theme-dropdown:hover {
+    color: var(--theme-base-background);
+    background-color: var(--theme-base-text-colour);
+}
+
+.post a {
+    color: var(--theme-link-colour);
+}
+
+a.read-more, a.read-more:hover, a.read-more:visited {
+    color: var(--theme-link-colour);
+}
+
+.post a:visited {
+    color: var(--theme-visited-link-colour);
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: var(--theme-title-link-colour);
+}
+
+.post-title a {
+    color: var(--theme-title-link-colour) !important;
+}
+
+th, td {
+    border-top-color: var(--theme-table-header-border-colour);
+}
+
+table tbody + tbody {
+    border-top-color: var(--theme-table-header-border-colour);
+}
+
+table table table {
+    background-color: var(--theme-table-background);
+}
+
+th {
+    color: var(--theme-table-header-colour);
+    background-color: var(--theme-table-header-background);
+}
+
+.blog-title a {
+	color: inherit;
+}
+
+.blog-description {
+    color: var(--theme-description-colour);
+}
+
+.nav a {
+	color: var(--theme-nav-link-colour);
+}
+
+a.nav-home, a.nav-blog {
+	color: var(--theme-nav-link-colour);
+}
+
+a.nav-current {
+	color: var(--theme-link-colour);
+}
+
+.nav a:hover {
+	color: var(--theme-link-colour);
+}
+
+.site-footer a {
+    color: var(--theme-link-colour);
+}
+
+.site-footer a:hover {
+	color: var(--theme-visited-link-colour);
+}
+
+.post-footer .tags a {
+	color: var(--theme-post-tags-link-colour);
+}
+
+.post-footer .tags a:hover {
+	color: var(--theme-post-tags-link-hover-colour);
+}
+
+.post-footer .share a {
+    color: var(--theme-post-share-link-colour);
+}
+
+.post-footer .share a:hover {
+	color: var(--theme-post-share-link-hover-colour);
+}
+
+.tag-description {
+	color: var(--theme-tag-description-colour);
+}
+
+.pagination, .pagination a {
+	color: var(--theme-pagination-colour);
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+	color: var(--theme-post-nav-links);
+}
+
+blockquote {
+    color: var(--theme-blockquote-colour);
+}
