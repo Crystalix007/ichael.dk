@@ -1,0 +1,37 @@
+:root {
+	--theme-colour-0: #3C2640;
+	--theme-colour-1: #3E7D77;
+	--theme-colour-2: #5054CE;
+	--theme-colour-3: #3C2640;
+	--theme-colour-4: #993392;
+	--theme-colour-5: #FCD0A1;
+	--theme-colour-6: #ADB2D3;
+	--theme-colour-7: #50585D;
+	--theme-colour-8: #B80000;
+}
+
+:root {
+	--theme-base-background: var(--theme-colour-5);
+	--theme-base-text-colour: var(--theme-colour-0);
+	--theme-blockquote-colour: var(--theme-colour-2);
+	--theme-code-colour: var(--theme-colour-4);
+	--theme-description-colour: var(--theme-colour-2);
+	--theme-link-colour: var(--theme-colour-1);
+	--theme-nav-link-colour: var(--theme-colour-2);
+	--theme-pagination-colour: var(--theme-colour-2);
+	--theme-post-nav-links: var(--theme-colour-1);
+	--theme-post-share-link-colour: var(--theme-colour-2);
+	--theme-post-share-link-hover-colour: var(--theme-colour-7);
+	--theme-post-tags-link-colour: var(--theme-colour-2);
+	--theme-post-tags-link-hover-colour: var(--theme-colour-1);
+	--theme-table-background: var(--theme-colour-5);
+	--theme-table-header-background: var(--theme-colour-6);
+	--theme-table-header-border-colour: var(--theme-colour-4);
+	--theme-table-header-colour: var(--theme-colour-0);
+	--theme-tag-description-colour: var(--theme-colour-2);
+	--theme-title-colour: var(--theme-colour-8);
+	--theme-title-link-colour: var(--theme-colour-3);
+	--theme-header-colour: var(--theme-colour-0);
+	--theme-header-link-colour: var(--theme-colour-3);
+	--theme-visited-link-colour: var(--theme-colour-2);
+}

@@ -8,7 +8,7 @@ body {
     background-color: var(--theme-base-text-colour);
 }
 
-.post a {
+.post a, p a {
     color: var(--theme-link-colour);
 }
 
@@ -20,8 +20,16 @@ a.read-more, a.read-more:hover, a.read-more:visited {
     color: var(--theme-visited-link-colour);
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: var(--theme-header-colour);
+}
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: var(--theme-title-link-colour);
+    color: var(--theme-header-link-colour);
+}
+
+.post-title {
+	color: var(--theme-title-colour);
 }
 
 .post-title a {
