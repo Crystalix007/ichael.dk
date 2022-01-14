@@ -53,8 +53,18 @@
 		onload="this.rel='stylesheet'"
 	/>
 	<script src="{{ get_url(path="assets/js-cookie/js-cookie.js") | safe }}"></script>
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path="assets/css/theme.css") }}" />
-	<script src="{{ get_url(path="assets/js/theme.js") | safe }}"></script>
+	<style>
+		{{ load_data(path="assets/css/theme.css") }}
+	</style>
+	<script>
+		{% set themeColours = load_data(path="assets/themes/theme-colours.toml") %}
+		themeColours = {
+		{% for theme, themeDetails in themeColours %}
+					"{{ theme }}": {{ themeDetails | json_encode | safe }},
+		{% endfor %}
+		};
+		{{ load_data(path="assets/js/theme.js") | safe }}
+	</script>
 
 	<!-- TODO: add littlefoot JS footnote library -->
 </head>
