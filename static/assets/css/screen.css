@@ -471,6 +471,21 @@ Posts
 	height: 100%;
 }
 
+.command-block {
+	border: 1px solid var(--theme-table-header-border-colour);
+	padding: 0 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.command-block > .command {
+	width: 100%;
+	border-bottom: 1px dashed var(--theme-table-header-border-colour);
+}
+
+.command-block > .command > pre, .command-block > .command-output > pre {
+	padding: 0;
+}
+
 /*	==========================================================================
 Tags
 ========================================================================== */

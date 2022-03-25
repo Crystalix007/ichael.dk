@@ -1,0 +1,9 @@
+<div class="command-block">
+	<div class="command" {% if title %}title="{{ title }}" {% endif %}>
+		<pre>{{ command }}</pre>
+	</div>
+	<div class="command-output">
+		{{ body | safe | markdown | safe }}
+	</div>
+</div>
+

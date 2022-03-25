@@ -1,0 +1,8 @@
+<div class="command-block">
+	<div class="command" title="filename">
+		<pre>cat {{ filename }}</pre>
+	</div>
+	<div class="command-output">
+		{{ body | safe | markdown | safe }}
+	</div>
+</div>
