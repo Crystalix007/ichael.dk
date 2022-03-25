@@ -17,7 +17,7 @@ consider myself as experienced at any of these languages, I do have sufficient
 experience for example to: develop a scanner & parser in Java for an invented
 language; design and develop the core components of a single processor,
 asynchronous operating system in C. This has given me some knowledge about
-the inherent limitations of these languages, and how to avoid them.
+the inherent limitations of these languages, and how to design around them.
 
 Additionally, I have worked on projects involving Javascript / Typescript and
 frontend mark-up. These have involved a mix of legacy and cutting-edge

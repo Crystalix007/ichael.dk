@@ -32,18 +32,14 @@
 		href="{{ get_url(path="assets/css/fonts.css") | safe }}"
 		onload="this.rel='stylesheet'"
 	/>
-	{{ preload::preload(
-		type="text/css",
-		as="style",
-		href=get_url(path="assets/css/normalize.css"),
-		rel="stylesheet"
-		) }}
-	{{ preload::preload(
-		type="text/css",
-		as="style",
-		href=get_url(path="assets/css/icons.css"),
-		rel="stylesheet"
-		) }}
+	<link rel="stylesheet" type="text/css" as="style"
+		href="{{ get_url(path="assets/css/normalize.css") | safe }}"
+		onload="this.rel='stylesheet'"
+	/>
+	<link rel="stylesheet" type="text/css" as="style"
+		href="{{ get_url(path="assets/css/icons.css") | safe }}"
+		onload="this.rel='stylesheet'"
+	/>
 	<link rel="stylesheet" type="text/css" as="style"
 		href="{{ get_url(path="assets/css/screen.css") | safe }}"
 		onload="this.rel='stylesheet'"
