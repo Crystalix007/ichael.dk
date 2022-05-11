@@ -118,7 +118,7 @@ p {
 
 code, tt, pre {
 	font-family: "Source Code Pro", monospace, sans-serif;
-	white-space: pre-wrap;
+	white-space: pre;
 	font-size: 0.79rem;
 	border: none;
 	background: none;
@@ -127,6 +127,7 @@ code, tt, pre {
 pre {
 	padding: 0 2em;
 	line-height: 1.3em;
+	overflow-x: scroll;
 }
 
 code, tt {
@@ -564,5 +565,11 @@ Pagination
 
 	.blog-description {
 		font-size: 0.889rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		max-width: 750px;
 	}
 }
